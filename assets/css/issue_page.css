@@ -1,0 +1,21 @@
+/* Issue Card Styles */
+.issue-card {
+    background-color: #F4F5F7; 
+    color: #172B4D; 
+    padding: 10px; 
+    border: 1px solid #E4E7ED; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.2s ease; 
+}
+
+/* Hover effect for Issue Card */
+.issue-card:hover {
+    background-color: #EBECF0; 
+}
+
+/* Delete Issue Button Styles */
+.delete-issue {
+    float: right; 
+    margin-right: 10px; 
+}

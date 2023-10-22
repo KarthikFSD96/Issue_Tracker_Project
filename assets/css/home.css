@@ -1,0 +1,88 @@
+/* Home Container Styles */
+.home-container {
+    background-color: #9EC5FE; 
+    color: #332701; 
+}
+
+/* Project Name Styles */
+.project-name {
+    margin: auto; 
+    margin-left: 1%; 
+}
+
+/* Open Project Button Styles */
+.front {
+    will-change: transform;
+    transition: transform 250ms; /* Smooth transformation */
+}
+
+.open-project-btn {
+    position: relative; /* Positioning for "Open Project" button */
+
+    /* Animation for the "Open Project" button */
+    open-project-btn:hover .front {
+        animation: open-project-vibrate 0.01s linear infinite;
+    }
+}
+
+/* Keyframes for Vibration Animation */
+@keyframes open-project-vibrate {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    20%, 60% {
+        transform: translateY(-2px);
+    }
+    40%, 80% {
+        transform: translateY(2px);
+    }
+}
+
+/* Card Button Container Styles */
+.card-button-container {
+    display: flex;
+    gap: 5px; 
+}
+
+/* Card Button Styles */
+.card-button a {
+    display: inline-block;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s ease; /* Smooth button transformation */
+}
+
+/* "Open Project" Button Styles */
+.card-button a.open-project-btn {
+    border: 1px solid black; 
+    background-color: lightskyblue; 
+    color: black; 
+}
+
+/* Delete Link Styles */
+.card-button a.delete-link {
+    color: red; 
+    text-decoration: none; 
+}
+
+/* Button Hover Animation */
+.card-button a:hover {
+    transform: translate(2px, -2px); /* Button hover transformation */
+
+    /* Animation for button hover effect */
+    animation: delete-button-vibrate 0.09s linear infinite;
+}
+
+/* Keyframes for Button Vibration Animation */
+@keyframes delete-button-vibrate {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    20%, 60% {
+        transform: translateY(-2px);
+    }
+    40%, 80% {
+        transform: translateY(2px);
+    }
+}

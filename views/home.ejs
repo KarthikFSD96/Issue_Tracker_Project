@@ -1,0 +1,43 @@
+<!-- Link to the CSS stylesheet -->
+<link rel="stylesheet" href="/css/home.css">
+
+<!-- HTML code for displaying project details -->
+<body>
+  <div class="mb-5 p-5">
+    <!-- Loop through each project in the 'projects' array -->
+    <% for(let project of projects) { %>
+    <div class="card mb-2 w-50 m-auto home-container" id="project-<%= project.id %>">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <!-- Project Name -->
+        <strong>Name of the Project:</strong>
+        <p class="project-name">
+          <%= project.name %>
+        </p>
+        <div class="card-button-container">
+          <div class="card-button">
+            <!-- Link to open the project -->
+            <a href="/project/<%= project._id %>" class="btn btn-danger front" style="background-color: lightskyblue; border: none; color: black; border: 1px black solid;">Open Project</a>
+          </div>
+          <div class="card-button">
+            <!-- Link to delete the project -->
+            <a href="/project/delete/?id=<%= project.id %>" class="delete-link">
+              <i class="fa-solid fa-trash" style="color: red;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card-body d-flex justify-content-between align-items-center">
+        <div>
+          <!-- Project Description -->
+          <p class="card-title"><strong>Description: </strong><%= project.description %></p>
+          <!-- Project Author -->
+          <p class="card-text"><strong>Author: </strong><%= project.author %></p>
+        </div>
+      </div>
+    </div>
+    <!-- End of the project loop -->
+    <% } %>
+  </div>
+  <!-- JavaScript to handle project deletion -->
+  <script src="/js/delete_project.js"></script>
+</body>

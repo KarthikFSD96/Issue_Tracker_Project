@@ -1,0 +1,22 @@
+<!-- Link the CSS stylesheet for the header -->
+<link rel="stylesheet" href="/css/header.css">
+
+<!-- Header UI -->
+<div class="header-container">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center"> <!-- Container for the logo and heading -->
+          <img src="https://static.thenounproject.com/png/3381594-200.png" alt="Logo" width="40" height="40"> <!-- Replace with the actual logo path -->
+          <a class="navbar-brand text-light" href="/">Issue Tracker</a> <!-- Heading with margin-left for logo spacing -->
+        </div>
+        <!-- Include issue or project form based on the page title -->
+        <% if (title == "Project Page") { %>
+          <%- include('_issue_form'); %>
+        <% } else { %>
+          <%- include('_project_form'); %>
+        <% } %>
+      </div>
+    </nav>
+  </div>
+</div>

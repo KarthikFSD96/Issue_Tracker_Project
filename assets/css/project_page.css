@@ -1,0 +1,45 @@
+/* Container styles */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+/* Card styles */
+.card {
+    border: 1px solid black; 
+    border-radius: 5px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
+    padding: 20px; 
+    background-color: lightskyblue; 
+    color: black; 
+}
+
+/* Card title styles */
+.card-title {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #0052CC; 
+}
+
+/* Card text styles */
+.card-text {
+    font-size: 19px; 
+    background-color: lightskyblue; 
+}
+
+/* Background color for "danger" section */
+.bg-danger {
+    background-color: #0747A6; 
+    color: lightskyblue; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+/* Background color for "sec" section */
+.bg-sec {
+    background-color: #172B4D; 
+    color: whitesmoke; 
+    padding: 10px; 
+    border-radius: 5px; 
+}

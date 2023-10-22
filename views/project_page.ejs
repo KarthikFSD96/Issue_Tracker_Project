@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/project_page.css"> <!-- Link the CSS file -->
+</head>
+<body>
+    <div class="d-flex align-items-center container mt-2">
+        <div class="card container w-50 project-container">
+            <div class="card-body">
+                <h5 class="card-title bg-danger text-light">Project Name: <%= project.name %></h5> <!-- Display the project name -->
+                <p class="card-text bg-sec">Project Details: <%= project.description %></p> <!-- Display the project description -->
+                <p class="card-text">Project Author: <%= project.author %></p> <!-- Display the project author -->
+            </div>
+        </div>
+    </div>
+    <%- include('./partials/_issue_page') %>
+</body>
+</html>
