@@ -2,7 +2,7 @@
 
 # Issue Tracker Project
 
-Welcome to the GitHub Issue Tracker, a web application designed to help you manage, track, and organize your projects with ease. Whether you're a developer, project manager, or simply someone looking to streamline project management, our Issue Tracker is here to simplify the process.
+Welcome to the Issue Tracker Project, a web application designed to help you manage, track, and organize your projects with ease. Whether you're a developer, project manager, or simply someone looking to streamline project management, our Issue Tracker is here to simplify the process.
 
 ## Getting Started
 
